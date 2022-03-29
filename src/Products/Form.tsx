@@ -7,7 +7,7 @@ import { addProduct } from "./Products.slice";
 import { useAppDispatch } from "../store.hooks";
 
 export const FormProduct: React.FC = () => {
-  const dispatch = useAppDispatch();
+  const dispatch = useDispatch();
 
   const [products, setProduct] = useState<Product>({
     id: 0,

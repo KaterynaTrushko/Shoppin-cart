@@ -9,25 +9,25 @@ export interface Product {
 }
 
 const initialState: Product[] = [
-  { id: 1, title: "Milk (regular)", packege: "0.25 liter", price: 0.16 },
+  { id: 1, title: "Milk (regular)", packege: "0.25 liter", price: 5 },
   {
     id: 2,
     title: "Loaf of Fresh White Bread",
     packege: "125.00 g",
-    price: 0.2,
+    price: 6,
   },
-  { id: 3, title: "Rice (white),", packege: "0.10 kg", price: 0.09 },
-  { id: 4, title: "Eggs (regular)", packege: "2.40", price: 0.4 },
-  { id: 5, title: "Local Cheese", packege: "0.10 kg", price: 0.59 },
-  { id: 6, title: "Chicken Fillets", packege: "0.15 kg", price: 0.62 },
-  { id: 7, title: "Beef Round", packege: "0.15 kg", price: 1.26 },
-  { id: 8, title: "Apples", packege: "0.30 kg", price: 0.26 },
-  { id: 9, title: "Banana", packege: "0.25 kg", price: 0.28 },
-  { id: 10, title: "Oranges", packege: "0.30 kg", price: 0.39 },
-  { id: 11, title: "Tomato", packege: "0.20 kg", price: 0.35 },
-  { id: 12, title: "Potato", packege: "0.20 kg", price: 0.12 },
-  { id: 13, title: "Onion", packege: "0.10 kg", price: 0.07 },
-  { id: 14, title: "Lettuce", packege: "0.20 head", price: 0.17 },
+  { id: 3, title: "Rice (white),", packege: "0.10 kg", price: 9 },
+  { id: 4, title: "Eggs (regular)", packege: "2.40", price: 6 },
+  { id: 5, title: "Local Cheese", packege: "0.10 kg", price: 7 },
+  { id: 6, title: "Chicken Fillets", packege: "0.15 kg", price: 6 },
+  { id: 7, title: "Beef Round", packege: "0.15 kg", price: 2 },
+  { id: 8, title: "Apples", packege: "0.30 kg", price: 4 },
+  { id: 9, title: "Banana", packege: "0.25 kg", price: 3 },
+  { id: 10, title: "Oranges", packege: "0.30 kg", price: 3 },
+  { id: 11, title: "Tomato", packege: "0.20 kg", price: 2 },
+  { id: 12, title: "Potato", packege: "0.20 kg", price: 3 },
+  { id: 13, title: "Onion", packege: "0.10 kg", price: 5 },
+  { id: 14, title: "Lettuce", packege: "0.20 head", price: 7 },
 ];
 
 export const productsSlice = createSlice({
