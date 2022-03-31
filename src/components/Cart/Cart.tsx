@@ -1,8 +1,9 @@
 import React from "react";
 import { getCartSelecror, getTotalPrice } from "./cart.slice";
-import { getAppSelectore } from "../store.hooks";
-import { useAppDispatch } from "../store.hooks";
+import { getAppSelectore } from "../../store.hooks";
+import { useAppDispatch } from "../../store.hooks";
 import { removeProductFromCart } from "./cart.slice";
+import { RemoveButton } from "../styles/Button.styled";
 
 export const Cart: React.FC = () => {
   const dicpatch = useAppDispatch();
@@ -10,7 +11,7 @@ export const Cart: React.FC = () => {
   const totalPrice = getAppSelectore(getTotalPrice);
 
   const removeProduct = (id: number) => {
-    dicpatch(removeProductFromCart);
+    dicpatch(removeProductFromCart(id));
   };
 
   return (
@@ -21,7 +22,9 @@ export const Cart: React.FC = () => {
           <span>{`${product.title} __amount:${product.amount}  ___price:${
             product.price
           }$  ___total:${product.amount * product.price}$`}</span>
-          <button onClick={() => removeProduct(product.id)}>X</button>
+          <RemoveButton onClick={() => removeProduct(product.id)}>
+            X
+          </RemoveButton>
         </div>
       ))}
       <div>{totalPrice}</div>

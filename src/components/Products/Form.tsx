@@ -4,7 +4,8 @@ import { ProductsList } from "./ProductsList";
 import { Product } from "./Products.slice";
 import { useDispatch } from "react-redux";
 import { addProduct } from "./Products.slice";
-import { useAppDispatch } from "../store.hooks";
+import { useAppDispatch } from "../../store.hooks";
+import { Button } from "../styles/Button.styled";
 
 export const FormProduct: React.FC = () => {
   const dispatch = useDispatch();
@@ -62,7 +63,7 @@ export const FormProduct: React.FC = () => {
           value={products.price}
           onChange={hendleChange}
         />
-        <button type="submit">add produdt</button>
+        <Button type="submit">add produdt</Button>
       </form>
     </>
   );
