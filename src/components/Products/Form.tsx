@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { ProductsList } from "./ProductsList";
 import { Product } from "./Products.slice";
 import { useDispatch } from "react-redux";
 import { addProduct } from "./Products.slice";

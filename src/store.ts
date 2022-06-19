@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
 import products from "./components/Products/Products.slice";
 import cart from "./components/Cart/cart.slice";
 

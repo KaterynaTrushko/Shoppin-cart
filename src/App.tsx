@@ -5,18 +5,21 @@ import { Provider } from "react-redux";
 import { store } from "./store";
 import { Cart } from "./components/Cart/Cart";
 import { Container } from "./components/styles/Container.style";
-import globalStyle from "./components/styles/global";
+import GlobalStyle from "./components/styles/global";
 
 function App() {
   return (
-    <Provider store={store}>
-      <Container>
-        <h2>List of Pruducts</h2>
-        <ProductsList />
-        <FormProduct />
-        <Cart />
-      </Container>
-    </Provider>
+    <>
+      <GlobalStyle />
+      <Provider store={store}>
+        <Container>
+          <h2>List of Pruducts</h2>
+          <ProductsList />
+          <FormProduct />
+          <Cart />
+        </Container>
+      </Provider>
+    </>
   );
 }
 

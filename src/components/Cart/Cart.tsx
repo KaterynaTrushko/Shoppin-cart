@@ -27,7 +27,7 @@ export const Cart: React.FC = () => {
           </RemoveButton>
         </div>
       ))}
-      <div>{totalPrice}</div>
+      <div>TOTAL:{totalPrice}</div>
     </>
   );
 };

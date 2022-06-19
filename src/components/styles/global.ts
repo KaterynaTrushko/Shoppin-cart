@@ -6,12 +6,11 @@ export default createGlobalStyle`
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  background-color: #e5e5e5;
 }
 
 #root{
   margin: 0 auto;
-  background-color: #e5e5e5;
+
 }
 
 html {
